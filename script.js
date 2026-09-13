@@ -1,7 +1,7 @@
  const signupForm = document.getElementById("signupForm");
 
-signupForm.addEventListener("submit", function(event) {
-
+if (signupForm) {
+    signupForm.addEventListener("submit", function(event) {
     event.preventDefault();
 
     const password = document.getElementById("password").value;
@@ -13,7 +13,9 @@ signupForm.addEventListener("submit", function(event) {
     }
 
     alert("Signup successful!");
+window.location.href = "login.html";
 });
+}
 const loginForm = document.getElementById("loginForm");
 
 if (loginForm) {
@@ -29,6 +31,26 @@ if (loginForm) {
             return;
         }
 
-        alert("Login button clicked!");
+        alert("Login successful!");
+window.location.href = "index.html";
+    });
+}
+const learnMoreBtn = document.getElementById("learnMoreBtn");
+
+if (learnMoreBtn) {
+    learnMoreBtn.addEventListener("click", function() {
+        document.getElementById("aboutMessage").textContent =
+            "Keep learning, keep practicing and keep growing with StudentHub! 🚀";
+    });
+}
+const feedbackForm = document.getElementById("feedbackForm");
+
+if (feedbackForm) {
+    feedbackForm.addEventListener("submit", function(event) {
+        event.preventDefault();
+
+        alert("Thank you for your valuable feedback! 😊");
+
+        feedbackForm.reset();
     });
 }
