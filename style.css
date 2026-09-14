@@ -13,10 +13,9 @@ nav {
     background-color: #1d4ed8;
     padding: 15px 30px;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+justify-content: space-between;
+align-items: center;
 }
-
 .nav-links,
 .auth-links {
     display: flex;
@@ -24,11 +23,7 @@ nav {
     gap: 25px;
 }
 
-nav a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-}
+
 nav a {
     color: white;
     text-decoration: none;
@@ -42,9 +37,7 @@ nav a:hover {
     background-color: rgba(255, 255, 255, 0.15);
     text-decoration: none;
 }
-nav a:hover {
-    text-decoration: underline;
-}
+
 main {
     padding: 20px;
 }
@@ -173,6 +166,65 @@ h1 span:last-child {
     color: #555;
 }
 /* Mobile Responsive Design */
+/* Modern Topic Cards */
+
+#topics {
+    background-color: #ffffff;
+    padding: 50px 30px;
+}
+
+#topics h2 {
+    font-size: 36px;
+    color: #12305a;
+    margin-bottom: 35px;
+}
+
+.topic-cards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+
+.topic-card {
+    width: 180px;
+    min-height: 180px;
+    padding: 25px 20px;
+    background-color: #f8fbff;
+    border: 1px solid #dbeafe;
+    border-radius: 18px;
+    text-align: left;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+    transition: 0.3s;
+}
+
+.topic-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 25px rgba(37, 99, 235, 0.15);
+}
+
+.topic-card a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.topic-card img {
+    width: 55px;
+    height: 55px;
+    object-fit: contain;
+    margin-bottom: 15px;
+}
+
+.topic-card h3 {
+    color: #12305a;
+    font-size: 20px;
+    margin: 5px 0 10px;
+}
+
+.topic-card p {
+    color: #64748b;
+    font-size: 14px;
+}
 
 @media (max-width: 600px) {
 
@@ -219,106 +271,31 @@ h1 span:last-child {
         width: 100%;
         height: 180px;
     }
-}
-.topic-cards {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    justify-content: center;
+       .hero {
+        flex-direction: column;
+        padding: 40px 20px;
+        text-align: center;
+    }
+
+    .hero-content {
+        text-align: center;
+    }
+
+    .hero h2 {
+        font-size: 38px;
+    }
+
+    .hero-features {
+        justify-content: center;
+    }
+
+    .hero-visual {
+        width: 100%;
+        min-height: 350px;
+        transform: scale(0.85);
+    } 
 }
 
-.topic-card {
-    background-color: #eef6ff;
-    width: 180px;
-    padding: 20px;
-    text-align: center;
-    border-radius: 10px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-}
-
-.topic-card a {
-    color: #1d4ed8;
-    text-decoration: none;
-}
-
-.topic-card:hover {
-    transform: translateY(-5px);
-} 
-.hero {
-    background-color: #eaf4ff;
-    padding: 60px 30px;
-    text-align: center;
-    border-radius: 15px;
-}
-
-.hero-content {
-    max-width: 800px;
-    margin: auto;
-}
-
-.hero-tag {
-    color: #1d4ed8;
-    font-weight: bold;
-    font-size: 18px;
-}
-
-.hero h2 {
-    font-size: 42px;
-    color: #12305a;
-    margin: 20px 0;
-}
-
-.hero p {
-    font-size: 18px;
-}
-
-.hero-button {
-    display: inline-block;
-    background-color: #2563eb;
-    color: white;
-    padding: 14px 30px;
-    margin-top: 15px;
-    border-radius: 8px;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-.hero-button:hover {
-    background-color: #1d4ed8;
-}
-.topic-cards {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    justify-content: center;
-}
-
-.topic-card {
-    background-color: #ffffff;
-    width: 180px;
-    padding: 25px 15px;
-    text-align: center;
-    border-radius: 18px;
-    border: 1px solid #dbeafe;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
-    transition: 0.3s;
-}
-
-.topic-card h3 {
-    color: #12305a;
-    font-size: 18px;
-    margin-top: 10px;
-}
-
-.topic-card:hover {
-    transform: translateY(-8px);
-    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
-}
-.topic-card img {
-    width: 55px;
-    height: 55px;
-    margin-bottom: 10px;
-}
 .topic-card:nth-child(2) img {
     width: 65px;
     height: 65px;
@@ -379,18 +356,54 @@ h1 span:last-child {
     font-weight: bold;
 }
 .feedback-section {
-    max-width: 600px;
-    margin: 30px auto;
+    max-width: 650px;
+    margin: 50px auto;
+    padding: 35px;
+    background: linear-gradient(145deg, #ffffff, #f0f7ff);
+    border: 1px solid #dbeafe;
+    border-radius: 20px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
 }
 
 .feedback-section h2 {
     color: #12305a;
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.feedback-section p {
+    color: #64748b;
+    text-align: center;
+}
+
+.feedback-section textarea {
+    width: 100%;
+    min-height: 130px;
+    padding: 14px;
+    margin-top: 15px;
+    border: 1px solid #bfdbfe;
+    border-radius: 10px;
+    background-color: #ffffff;
+    box-sizing: border-box;
+    resize: vertical;
+}
+
+.feedback-section textarea:focus {
+    outline: none;
+    border-color: #2563eb;
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
 }
 
 .feedback-section button {
-    background-color: #2563eb;
     width: 100%;
-    margin-top: 10px;
+    padding: 14px;
+    margin-top: 15px;
+    background-color: #2563eb;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: 16px;
 }
 
 .feedback-section button:hover {
@@ -469,16 +482,268 @@ header h1 span:last-of-type {
 .signup-section button:hover {
     background-color: #1d4ed8;
 }
-.feedback-section textarea {
-    min-height: 120px;
-    resize: vertical;
-    border: 1px solid #bfdbfe;
-    border-radius: 8px;
-    padding: 12px;
-    box-sizing: border-box;
+
+/* Modern Hero Design */
+
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    min-height: 480px;
+    padding: 60px 70px;
+    background: linear-gradient(135deg, #eef6ff, #dbeafe);
+    overflow: hidden;
 }
 
-.feedback-section textarea:focus {
-    outline: none;
-    border-color: #2563eb;
+.hero-content {
+    flex: 1;
+    max-width: 600px;
+    text-align: left;
+}
+
+.hero-tag {
+    display: inline-block;
+    background-color: #dbeafe;
+    color: #1d4ed8;
+    padding: 10px 18px;
+    border-radius: 25px;
+    font-weight: bold;
+}
+
+.hero h2 {
+    font-size: 52px;
+    line-height: 1.1;
+    color: #12305a;
+    margin: 25px 0 15px;
+}
+
+.hero h2 span {
+    color: #2563eb;
+}
+
+.hero-description {
+    font-size: 18px;
+    color: #334155;
+    margin: 8px 0;
+}
+
+.hero-button {
+    display: inline-block;
+    margin-top: 25px;
+    padding: 15px 28px;
+    background-color: #2563eb;
+    color: white;
+    border-radius: 10px;
+    font-weight: bold;
+    text-decoration: none;
+    box-shadow: 0 5px 15px rgba(37, 99, 235, 0.3);
+}
+
+.hero-button:hover {
+    background-color: #1d4ed8;
+    transform: translateY(-2px);
+}
+
+.hero-features {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 18px;
+    margin-top: 35px;
+    color: #334155;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.hero-visual {
+    position: relative;
+    flex: 1;
+    min-height: 380px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-visual {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-visual img {
+    width: 100%;
+    max-width: 550px;
+    height: auto;
+    object-fit: contain;
+    display: block;
+}
+.code-box,
+.book-stack,
+.student-icon,
+.laptop,
+.floating-icons {
+    display: none;
+}
+.hero-visual {
+    background: transparent;
+}
+
+.hero-visual img {
+    mix-blend-mode: multiply;
+    border: none;
+    box-shadow: none;
+}
+.hero-visual img {
+    border-radius: 20px;
+    filter: drop-shadow(0 8px 18px rgba(37, 99, 235, 0.08));
+}
+.topic-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.topic-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 25px rgba(37, 99, 235, 0.15);
+}
+.hero {
+    overflow: hidden;
+}
+.hero-button,
+.learn-btn,
+.resource-btn {
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.hero-button:hover,
+.learn-btn:hover,
+.resource-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 18px rgba(37, 99, 235, 0.18);
+}
+.hero-visual img {
+    max-width: 700px;
+    width: 120%;
+}
+.hero-visual {
+    flex: 1.2;
+}
+
+.hero-content {
+    flex: 0.8;
+}
+.feature-card {
+    background: #ffffff;
+    border-radius: 18px;
+    padding: 25px;
+    border: 1px solid #dbeafe;
+    box-shadow: 0 8px 20px rgba(37, 99, 235, 0.08);
+    transition: 0.3s ease;
+}
+
+.feature-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 14px 28px rgba(37, 99, 235, 0.15);
+}
+.resource-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.resource-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 25px rgba(37, 99, 235, 0.15);
+}
+
+.resource-icon {
+    font-size: 45px;
+    margin-bottom: 12px;
+}
+.resource-card h3 {
+    color: #12305a;
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.resource-card p {
+    color: #64748b;
+    line-height: 1.6;
+}
+.feedback-section {
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 18px;
+    border: 1px solid #dbeafe;
+    box-shadow: 0 8px 20px rgba(37, 99, 235, 0.08);
+    margin-top: 30px;
+}
+
+.feedback-section h2 {
+    color: #12305a;
+}
+
+.feedback-section textarea {
+    width: 100%;
+    min-height: 120px;
+    padding: 15px;
+    border: 1px solid #bfdbfe;
+    border-radius: 12px;
+    box-sizing: border-box;
+}
+footer {
+    background: #1d4ed8;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+footer p {
+    margin: 0;
+    font-size: 15px;
+}
+footer p {
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: 0.3px;
+}
+.topic-card h3 {
+    color: #12305a;
+    font-size: 21px;
+    margin: 10px 0;
+}
+
+.topic-card p {
+    color: #64748b;
+    line-height: 1.5;
+}
+@media (max-width: 600px) {
+    .topic-cards,
+    .video-cards,
+    .resource-cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .topic-card,
+    .video-card,
+    .resource-card {
+        width: 90%;
+        max-width: 350px;
+    }
+}
+.hero-content {
+    padding: 10px;
+}
+
+.hero-description {
+    max-width: 600px;
+    margin: 0 auto 25px;
+    line-height: 1.6;
+}
+.hero-button,
+.learn-btn,
+.resource-btn {
+    border-radius: 30px;
+    font-weight: bold;
+    cursor: pointer;
 }
